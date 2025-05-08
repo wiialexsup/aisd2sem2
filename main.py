@@ -326,7 +326,7 @@ if __name__ == "__main__":
     types=["orig","gray","bw_no","bw_yes"]
     for name in names:
         for typek in types:
-            for value in range(95, 101, 5):
+            for value in range(0, 101, 5):
                 print(f"{name} {typek} {value},ready")
                 main(f"prev/{name}/{typek}.png", value,value,name,typek)
             quality_range = range(0, 101, 5)
